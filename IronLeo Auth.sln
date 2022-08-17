@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronLeo Auth.Android", "IronLeo Auth\IronLeo Auth.Android\IronLeo Auth.Android.csproj", "{A08ACE79-C7F5-40B8-A19C-7B11FF37D76A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronLeo Auth", "IronLeo Auth\IronLeo Auth\IronLeo Auth.csproj", "{30EABC39-433C-408D-9FCF-23013030E5E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A08ACE79-C7F5-40B8-A19C-7B11FF37D76A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08ACE79-C7F5-40B8-A19C-7B11FF37D76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08ACE79-C7F5-40B8-A19C-7B11FF37D76A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A08ACE79-C7F5-40B8-A19C-7B11FF37D76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08ACE79-C7F5-40B8-A19C-7B11FF37D76A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08ACE79-C7F5-40B8-A19C-7B11FF37D76A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{30EABC39-433C-408D-9FCF-23013030E5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30EABC39-433C-408D-9FCF-23013030E5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30EABC39-433C-408D-9FCF-23013030E5E5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{30EABC39-433C-408D-9FCF-23013030E5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30EABC39-433C-408D-9FCF-23013030E5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30EABC39-433C-408D-9FCF-23013030E5E5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08394101-C03B-438D-BF3B-F1D63D580C73}
+	EndGlobalSection
+EndGlobal

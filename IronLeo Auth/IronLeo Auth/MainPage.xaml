@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IronLeo_Auth.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#000000" Padding="16" CornerRadius="0">
+                <Grid Padding="10,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Authenticator" HorizontalTextAlignment="Left" TextColor="White" FontSize="26" VerticalTextAlignment="Center"/>
+                    <ImageButton Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Clicked="AddButton_Clicked" BackgroundColor="Transparent" Source="add_icon.png"/>
+                    <ImageButton Grid.Column="2" x:Name="settingsbtn" Clicked="settingsbtn_Clicked" BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Center" Source="settings_icon.png" />
+                </Grid>
+            </Frame>
+            <RefreshView x:Name="refreshView" RefreshColor="Black"  Refreshing="refreshView_Refreshing">
+                <ScrollView Orientation="Vertical">
+                    <Grid x:Name="datagrid">
+                        <Grid.RowDefinitions>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ScrollView>
+            </RefreshView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

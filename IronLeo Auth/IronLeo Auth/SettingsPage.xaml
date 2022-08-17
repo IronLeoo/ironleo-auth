@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IronLeo_Auth.SettingsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Black" Padding="16" CornerRadius="0">
+                <Grid Padding="10,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+                    <ImageButton x:Name="backbtn" Clicked="backbtn_Clicked" Source="drawable/back_arrow.png" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent"/>
+                </Grid>
+            </Frame>
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Server Key">
+                        <ViewCell>
+                            <Entry x:Name="serverKey" />
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Client Key">
+                        <ViewCell>
+                            <Entry x:Name="clientKey" />
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Crypto IV">
+                        <ViewCell>
+                            <Entry x:Name="cryptoIV"/>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="API endpoint URL">
+                        <ViewCell>
+                            <Entry x:Name="apiUrl"/>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection>
+                        <ViewCell>
+                            <Button x:Name="submitButton" Pressed="submitButton_Pressed" TextTransform="None" Text="Submit"/>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
